@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
-* {
+@media (min-width: 1100px) {
+    * {
     margin: 0;
     box-sizing: border-box;
     transition: all 300ms ease;
@@ -69,17 +69,6 @@
     border-radius: 17px;
     right: -29%;
     z-index: 1;
-}
-
-.nomeProduto {
-    line-height: 115%;
-    font-size: 32px !important;
-    width: 245px;
-    height: 152px;
-    z-index: 1;
-    margin-top: 25px;
-    font-family: "Zilla Slab";
-    margin-left: 15px;
 }
 
 .preço {
@@ -230,4 +219,238 @@ a {
     span {
         transform: translate(-50%, -50%) scale(1.2);
     }
+}
+}
+
+@media (max-width: 550px) {
+    * {
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 300ms ease;
+    font-family: "Jaldi";
+}
+
+#cardCarrinho {
+    width: 90%;
+    height: 700px;
+    border: solid 1px black;
+    border-radius: 40px;
+    position: relative;
+    margin-top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 0 50px black;
+    margin-bottom: 25px;
+}
+
+#itensCarrinho {
+    position: absolute;
+    left: 0;
+    top: 7%;
+}
+
+#nomeCarrinho {
+    font-family: "Jaldi";
+    font-size: 48px;
+    margin-left: 25px;
+}
+
+.itemCarrinho {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #D9D9D9;
+    width: 67%;
+    height: 110px;
+    border-radius: 17px;
+    left: 0;
+    margin: 25px 0 25px 25px;
+    img {
+        width: 90px;
+        height: 90px;
+        z-index: 1;
+        margin: 10px 0 0 10px ;
+        border-radius: 17px;
+    }
+}
+.divisor {
+    width: 10%;
+    height: 110px;
+    background-color: #D9D9D9;
+    z-index: 3;
+    position: absolute;
+    right: 3%;
+}
+.botãoPreço {
+    height: 110px;
+    width: 35%;
+    background-color: #46D729;
+    position: absolute;
+    border-radius: 17px;
+    right: -25%;
+    z-index: 1;
+}
+
+.nomeProduto {
+    line-height: 115%;
+    font-size: 16px !important;
+    width: 60%;
+    z-index: 4;
+    margin-top: 20px;
+    font-family: "Zilla Slab";
+    margin-left: 2%;
+}
+
+.preço {
+    line-height: 115%;
+    font-size: 20px !important;
+    z-index: 1;
+    font-family: "Zilla Slab";
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(0, -50%);
+}
+
+.removerItem {
+    width: 66px;
+    height: 48px;
+    background-color: #FFAEAE;
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    right: -35%;
+    transform: translate(0, -50%);
+}
+
+.removerItem>p {
+    font-family: "Instrument Sans";
+    position: absolute;
+    font-size: 35px;
+    color: #FF0000;
+    right: 5%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.removerItem:hover {
+    right: -37%;
+}
+
+#divisor {
+    height: 1px;
+    width: 90%;
+    background-color: #000;
+    position: absolute;
+    top: 48%;
+    margin-left: 5%;
+}
+
+#infoCarrinho {
+    position: absolute;
+    bottom: 7%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#infoCarrinho p {
+    font-family: "Zilla Slab";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 115%;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+#informacoes {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#informacoes>input {
+    background-color: #DDDDDD;
+    border-radius: 16px;
+    border: 1px solid black;
+    right: 88px;
+    margin: 0 5% 1%;
+    padding-left: 5px;
+    font-family: "Zilla Slab";
+    font-weight: 200;
+    line-height: 115%;
+    color: #000;
+    font-size: 15px;
+    height: 30px;
+}
+
+#cep, #rua {
+    width: 90%;
+}
+
+#numero, #complemento {
+    width: 40%;
+}
+
+#insiraCep {
+    font-size: 24px;
+}
+
+#frete {
+    font-size: 20px !important;
+    text-align: center;
+}
+
+#impostos {
+    font-size: 16px !important;
+    text-align: center;
+}
+
+#totalCompra {
+    position: relative;
+    top: 0;
+    width: 200px;
+    text-align: center;
+    font-family: "Jaldi" !important;
+    color: #000;
+    font-size: 26px !important;
+    span {
+        font-family: "Zilla Slab" !important;
+        font-size: 36px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+#comprar {
+    position: relative !important;
+    top: 10% !important;
+    background-color: #48EB28;
+    width: 200px;
+    height: 43px;
+    color: #FFF;
+    text-align: center;
+    border-radius: 21.5px;
+    font-size: 36px;
+    text-decoration: none;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    span {
+        font-family: "Zilla Slab" !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+#comprar:hover {
+    transform: scale(1.1) translate(-46%);
+    box-shadow: 0 0 10px #48EB28;
+    span {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
 }
