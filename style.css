@@ -125,7 +125,7 @@ body {
     width: 300px;
     height: 300px;
     position: absolute;
-    top: -1670%;
+    bottom: 0%;
     background: linear-gradient(0deg, black, rgba(0, 0, 0, 0));
 }
 
@@ -336,4 +336,5 @@ body {
     color: #000;
     text-decoration: none;
 }
+
 }
