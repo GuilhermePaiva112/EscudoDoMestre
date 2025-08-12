@@ -58,7 +58,7 @@ body {
 #homeLorem1 {
     position: absolute;
     top: 0;
-    left: 101%;
+    left: 50%;
 }
 
 #homeLorem1>h1 {
