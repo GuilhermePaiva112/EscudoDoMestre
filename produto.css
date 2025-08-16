@@ -193,3 +193,104 @@
     }
 }
 }
+
+@media (min-width: 551px) and (max-width: 1099px) {
+    * {
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 300ms ease;
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+    div {
+        background-color: rgba(147, 197, 253, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+}
+
+.imgFitCover {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease-out;
+}
+
+#cardProduto {
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    p {
+        font-family: "Zilla Slab";
+    }
+}
+
+#imagemProduto {
+    width: 440px;
+    height: 440px;
+    img {
+        width: 100%;
+        box-shadow: 0 0 10px black;
+    }
+}
+
+#infoProduto {
+    width: 515px;
+}
+
+#nomeProduto {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding-left: 5%;
+}
+
+#precoProduto {
+    font-size: 30px;
+        padding-left: 5%;
+}
+
+#parcelas {
+    font-size: 18px;
+    margin-bottom: 25px;
+        padding-left: 5%;
+}
+
+#infoProduto>div {
+    background-color: #29F466;
+    width: 200px;
+    height: 60px;
+    border-radius: 18px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 5%;
+    a {
+        font-family: "Zilla Slab";
+        color: #FFF;
+        text-decoration: none;
+        font-size: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+#infoProduto>div:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px black;
+    a {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+}
